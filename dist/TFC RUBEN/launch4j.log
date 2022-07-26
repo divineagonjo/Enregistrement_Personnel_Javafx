@@ -1,0 +1,14 @@
+
+
+Version:	3.14
+CmdLine:	C:\Users\USER\Documents\NetBeansProjects\TFC2\dist\output\tfc.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\USER\Documents\NetBeansProjects\TFC2\dist\output\.
+Java min ver:	1.000.000
+Java max ver:	1.008.000
+Bundled JRE(s):	C:\Program Files (x86)\Java\jre1.8.0_91
+Check launcher:	C:\Program Files (x86)\Java\jre1.8.0_91\bin\javaw.exe (OK)
+Launcher:	C:\Program Files (x86)\Java\jre1.8.0_91\bin\javaw.exe
+Launcher args:	-jar "C:\Users\USER\Documents\NetBeansProjects\TFC2\dist\output\tfc.exe"
+Args length:	72/32768 chars
+Exit code:	0

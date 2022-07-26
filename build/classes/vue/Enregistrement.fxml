@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="752.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.EnregistrementController">
+   <children>
+      <Label layoutX="238.0" layoutY="14.0" text="Fiche de Recrutement">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutY="52.0" prefHeight="9.0" prefWidth="752.0" />
+      <Label layoutX="21.0" layoutY="68.0" text="Remplissez ce formulaire pour enregistrer une fiche de recrutement" />
+      <AnchorPane fx:id="panel1" layoutX="14.0" layoutY="94.0" prefHeight="454.0" prefWidth="723.0">
+         <children>
+            <Label layoutX="14.0" layoutY="43.0" text="N° carte d'idenntité" />
+            <Label layoutX="14.0" layoutY="99.0" text="Nom" />
+            <Label layoutX="14.0" layoutY="153.0" text="Postnom" />
+            <Label layoutX="14.0" layoutY="200.0" text="Prénom" />
+            <Label layoutX="14.0" layoutY="260.0" text="Sexe" />
+            <Label layoutX="14.0" layoutY="323.0" text="Date de naissance" />
+            <Label layoutX="14.0" layoutY="372.0" text="Lieu de naissance" />
+            <JFXTextField fx:id="txtNumCarte" layoutX="167.0" layoutY="43.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtNom" layoutX="167.0" layoutY="95.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtPostNom" layoutX="167.0" layoutY="145.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtPrenom" layoutX="167.0" layoutY="200.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXComboBox fx:id="cmbSexe" layoutX="167.0" layoutY="256.0" prefHeight="25.0" prefWidth="276.0" />
+            <DatePicker fx:id="txtDateNaissance" layoutX="167.0" layoutY="319.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtLieuNaissance" layoutX="167.0" layoutY="366.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXButton fx:id="btnNext" layoutX="596.0" layoutY="401.0" onAction="#onNext" prefHeight="39.0" prefWidth="104.0" style="-fx-border-color: black;" text="Suivant" />
+            <JFXButton fx:id="btnClose" layoutX="479.0" layoutY="401.0" onAction="#onClose" prefHeight="39.0" prefWidth="104.0" style="-fx-border-color: black;" text="Fermer" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panel2" layoutX="14.0" layoutY="94.0" prefHeight="454.0" prefWidth="723.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="43.0" text="Province d'origine" />
+            <Label layoutX="14.0" layoutY="99.0" text="Adresse" />
+            <Label layoutX="14.0" layoutY="153.0" text="Email" />
+            <Label layoutX="14.0" layoutY="200.0" text="N° Téléphone" />
+            <Label layoutX="14.0" layoutY="260.0" text="Diplôme obtenu" />
+            <Label layoutX="14.0" layoutY="323.0" text="Etat Civil" />
+            <Label layoutX="14.0" layoutY="366.0" text="Lieu de naissance" />
+            <JFXTextField fx:id="txtPaysOrigine" layoutX="167.0" layoutY="43.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtAdresse" layoutX="167.0" layoutY="95.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtEmail" layoutX="167.0" layoutY="145.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtNumPhone" layoutX="167.0" layoutY="200.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXComboBox fx:id="cmbDiplome" layoutX="167.0" layoutY="256.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXComboBox fx:id="cmbEtatCivil" layoutX="170.0" layoutY="316.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXTextField fx:id="txtLieuNaissance" layoutX="167.0" layoutY="366.0" prefHeight="25.0" prefWidth="276.0" />
+            <JFXButton fx:id="btnPrec" layoutX="516.0" layoutY="401.0" onAction="#onPrecedant" prefHeight="39.0" prefWidth="93.0" style="-fx-border-color: black;" text="Précédant" />
+            <JFXButton fx:id="btnFinish" layoutX="628.0" layoutY="401.0" onAction="#onFinish" prefHeight="39.0" prefWidth="81.0" style="-fx-border-color: green;" text="Terminer" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

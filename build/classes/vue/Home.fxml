@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="967.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.HomeController">
+   <children>
+      <Label layoutX="208.0" layoutY="21.0" prefHeight="17.0" prefWidth="297.0" text="Fiche de Recrutement">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutY="75.0" prefHeight="0.0" prefWidth="760.0" />
+      <TableView fx:id="table" layoutX="14.0" layoutY="103.0" prefHeight="355.0" prefWidth="943.0">
+        <columns>
+          <TableColumn fx:id="colNumCarte" prefWidth="79.0" text="N° carte d'identité" />
+          <TableColumn fx:id="colNom" prefWidth="74.0" text="Nom" />
+            <TableColumn fx:id="colPostNom" prefWidth="66.0" text="Postnom" />
+            <TableColumn fx:id="colPrenom" prefWidth="71.0" text="Prénom" />
+            <TableColumn fx:id="colSexe" prefWidth="59.0" text="Sexe" />
+            <TableColumn fx:id="colDateNaissance" prefWidth="93.0" text="Date de naissance" />
+            <TableColumn fx:id="colIeuNaissance" prefWidth="91.0" text="Lieu de naissance" />
+            <TableColumn fx:id="colProvinceOrigine" prefWidth="91.0" text="Province d'origine" />
+            <TableColumn fx:id="colAdresse" prefWidth="65.0" text="Adresse" />
+            <TableColumn fx:id="colEmail" prefWidth="72.0" text="Email" />
+            <TableColumn fx:id="colPhone" prefWidth="71.0" text="Téléphone" />
+            <TableColumn fx:id="colDiplome" prefWidth="55.0" text="Diplome" />
+            <TableColumn fx:id="colEtatCivil" prefWidth="55.0" text="Etat civil" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnNew" layoutX="14.0" layoutY="484.0" onAction="#btnNew" prefHeight="40.0" prefWidth="167.0" style="-fx-border-color: grey;" text="Nouvel enregistrement" />
+   </children>
+</AnchorPane>
